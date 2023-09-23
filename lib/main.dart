@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_best_practices/presentation/resources/app_routes.manager.dart';
+import 'package:flutter_best_practices/app/logics/app_scaffold.dart';
+import 'package:flutter_best_practices/presentation/resources/routes.manager.dart';
+import 'package:flutter_best_practices/presentation/resources/style_manager.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 void main() {
@@ -26,3 +28,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+AppStyle get $styles => AppScaffold.style;
